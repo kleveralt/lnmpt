@@ -135,10 +135,6 @@ PHP_Selection()
     case "${PHPSelect}" in
     1)
         echo "You will install ${PHP_Info[0]}"
-        if [[ "${DBSelect}" = 0 ]]; then
-            echo "You didn't select MySQL/MariaDB can't select ${PHP_Info[0]}!"
-            exit 1
-        fi
         ;;
     2)
         echo "You will install ${PHP_Info[1]}"
